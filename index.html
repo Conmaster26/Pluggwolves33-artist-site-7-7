@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlugWolves | Rural ft NGRO23</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    background: black;
+}
+
+.logo {
+    color: #00ffcc;
+    font-size: 24px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.hero img {
+    width: 280px;
+    border-radius: 20px;
+}
+
+.hero-text {
+    margin-left: 30px;
+    max-width: 500px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.price {
+    color: #00ffcc;
+}
+
+/* FLOAT BUTTON */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PlugWolves</div>
+</header>
+
+<section class="hero">
+
+<img src="IMG-20260506-WA0007.jpg">
+
+<div class="hero-text">
+    <h1>Rural ft NGRO23</h1>
+
+    <p>
+    PlugWolves brings a clean sound and strong creative identity.
+    Listen to the track below.
+    </p>
+
+    <!-- AUDIO PLAYER -->
+    <audio id="audioPlayer" controls preload="auto">
+        <source src="rural_ft_NGRO23.m4a" type="audio/mp4">
+        <source src="rural_ft_NGRO23.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <br>
+
+    <!-- FIXED PLAY BUTTON -->
+    <button class="btn" onclick="playAudio()">▶ Play Song</button>
+
+    <a class="btn"
+    href="https://wa.me/27711012818?text=Hi%20I%20want%20to%20work%20with%20PlugWolves">
+    Contact on WhatsApp
+    </a>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<div class="card">
+    <h3>Beats</h3>
+    <p class="price">R500</p>
+    <p>Custom beats for artists.</p>
+</div>
+
+<div class="card">
+    <h3>Cover Arts</h3>
+    <p class="price">R250</p>
+    <p>Professional cover designs.</p>
+</div>
+
+<div class="card">
+    <h3>Artist Websites</h3>
+    <p class="price">R1500</p>
+    <p>Full websites for artists.</p>
+</div>
+
+<div class="card">
+    <h3>Maintenance</h3>
+    <p class="price">R500/month</p>
+    <p>Website updates & support.</p>
+</div>
+
+</section>
+
+<section style="padding:40px;">
+<h2>Reviews</h2>
+<p>⭐⭐⭐⭐⭐ "Clean sound and professional quality."</p>
+<p>⭐⭐⭐⭐⭐ "This artist is going far."</p>
+</section>
+
+<!-- FLOAT BUTTON -->
+<a href="https://wa.me/27711012818?text=Hi%20I%20want%20to%20work%20with%20PlugWolves"
+class="whatsapp-float">💬</a>
+
+<script>
+function playAudio() {
+    const audio = document.getElementById("audioPlayer");
+    audio.play().catch(err => {
+        alert("Tap the player first, then press play again.");
+    });
+}
+</script>
+
+</body>
+  </html>
